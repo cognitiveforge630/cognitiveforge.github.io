@@ -594,6 +594,22 @@ integrated, the orthotropic matrix is active, three-point Gauss integration is
 active, and the calibrated model matches the target displacement to the printed
 precision.
 
+The corresponding PyVista displacement viewer gives a quick visual check of the
+same result. The fixed end stays blue, the free end carries the largest response,
+and the color bar reaches the same approximate displacement scale reported by
+`solver.py`.
+
+<figure class="visual-figure">
+  <img src="{{ '/assets/hermites-structural/cantilever-displacement-magnitude.png' | relative_url }}" alt="PyVista displacement magnitude plot for the calibrated Hermite cantilever beam">
+  <figcaption>Displacement magnitude for the calibrated cantilever solve. The largest displacement occurs at the loaded free end, while the fixed end remains near zero.</figcaption>
+</figure>
+
+Run the displacement viewer after `solver.py` has written `U.npy`:
+
+```powershell
+py view.py
+```
+
 ## Mesh Convergence Check For Displacement
 
 One fair objection to any calibrated example is: maybe the modulus was tuned on
