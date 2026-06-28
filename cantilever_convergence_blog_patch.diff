@@ -1,0 +1,44 @@
+diff --git a/_posts/2026-05-10-hermite-beam-theoretical-check.md b/_posts/2026-05-10-hermite-beam-theoretical-check.md
+index 92c051d..af5b3bb 100644
+--- a/_posts/2026-05-10-hermite-beam-theoretical-check.md
++++ b/_posts/2026-05-10-hermite-beam-theoretical-check.md
+@@ -594,6 +594,39 @@ integrated, the orthotropic matrix is active, three-point Gauss integration is
+ active, and the calibrated model matches the target displacement to the printed
+ precision.
+ 
++## Mesh Convergence Check For Displacement
++
++One fair objection to any calibrated example is: maybe the modulus was tuned on
++a mesh that had not converged yet. If that were true, the calibrated match could
++be a mesh accident instead of a useful benchmark.
++
++The cantilever mesh in `solver.py` is $5 \times 9 \times 121$ nodes. Since
++the beam dimensions are $4 \times 8 \times 120$ inches, that is a roughly
++one-inch Hex8 element size in all three directions. To check whether that mesh
++is already stable for the displacement quantity being used in the calibration,
++the same orthotropic seed solve was repeated on a uniform refinement ladder:
++nominal 4-inch, 2-inch, and 1-inch elements.
++
++| Nominal element size $h$ | Mesh nodes | Elements | DOF | Seed free-end $u_y$ at $E_z=2.0\times10^6$ psi (in) | Change from previous | $E_z$ needed to hit target (psi) |
++| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
++| 4 in | $2 \times 3 \times 31$ | 60 | 1,116 | -1.808943903920e-2 | -- | 1,674,948.059185 |
++| 2 in | $3 \times 5 \times 61$ | 480 | 5,490 | -1.813652178962e-2 | 0.260% | 1,679,307.573113 |
++| 1 in, `solver.py` mesh | $5 \times 9 \times 121$ | 3,840 | 32,670 | -1.815122484954e-2 | 0.081% | 1,680,668.967550 |
++
++The displacement is therefore already moving very little at the mesh used by
++`solver.py`: the 2-inch to 1-inch refinement changes the seed free-end
++$u_y$ by only about `0.081%`. A simple Richardson-style estimate from the
++4-inch, 2-inch, and 1-inch sequence gives an apparent convergence order of
++about `1.68` for this measured displacement and an extrapolated seed value of
++approximately `-1.815790125587e-2` in. On that estimate, the current one-inch
++mesh is about `0.037%` from the extrapolated displacement limit.
++
++That does not claim every stress component and every boundary layer is already
++mesh-independent. It is narrower and more useful than that: the specific
++quantity used for the modulus calibration, the free-end transverse displacement,
++is stable at the mesh density used in the tutorial. The calibrated modulus is
++therefore not being anchored to a visibly drifting displacement result.
++
+ ## Strain Spot Check
+ 
+ At the end, the solver prints a strain vector at element `1920`:

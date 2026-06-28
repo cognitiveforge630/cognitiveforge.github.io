@@ -1,0 +1,19 @@
+title: Cognitive Forge
+description: Notes, walkthroughs, and practical technical guides.
+url: "https://cognitiveforge630.github.io"
+baseurl: "/cognitiveforge.github.io"
+
+comments:
+  provider: utterances
+  utterances:
+    repo: cognitiveforge630/cognitiveforge.github.io
+    issue_term: pathname
+    label: comments
+    theme: github-light
+
+goatcounter:
+  domain: cognitiveforge.goatcounter.com
+
+exclude:
+  - proofread
+

@@ -1,0 +1,15 @@
+{% if page.comments != false and site.comments.provider == "utterances" %}
+  <section class="comments" aria-labelledby="comments-title">
+    <h2 id="comments-title">Comments</h2>
+    <p class="comments-note">Questions, corrections, and notes are welcome here.</p>
+    <script src="https://utteranc.es/client.js"
+      repo="{{ site.comments.utterances.repo }}"
+      issue-term="{{ site.comments.utterances.issue_term | default: 'pathname' }}"
+      label="{{ site.comments.utterances.label | default: 'comments' }}"
+      theme="{{ site.comments.utterances.theme | default: 'github-light' }}"
+      crossorigin="anonymous"
+      async>
+    </script>
+    <noscript>Please enable JavaScript to view and leave comments.</noscript>
+  </section>
+{% endif %}

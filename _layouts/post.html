@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+    {% include seo.html %}
+    {% include goatcounter.html %}
+    {% if page.math %}
+      <script>
+        window.MathJax = {
+          tex: {
+            inlineMath: [["$", "$"], ["\\(", "\\)"]],
+            displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+            processEscapes: true
+          }
+        };
+      </script>
+      <script async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    {% endif %}
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #fbfaf8;
+        --panel: #ffffff;
+        --text: #1f2933;
+        --muted: #667085;
+        --rule: #d9dee7;
+        --accent: #2563eb;
+        --accent-soft: #e8f0ff;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--accent);
+      }
+
+      .site-header,
+      .site-footer {
+        width: min(100% - 32px, 840px);
+        margin: 0 auto;
+      }
+
+      .site-header {
+        padding: 28px 0 16px;
+      }
+
+      .site-title {
+        color: var(--text);
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      main {
+        width: min(100% - 32px, 840px);
+        margin: 0 auto 48px;
+      }
+
+      article {
+        background: var(--panel);
+        border: 1px solid var(--rule);
+        border-radius: 8px;
+        padding: clamp(22px, 4vw, 48px);
+      }
+
+      .post-title {
+        margin: 0 0 10px;
+        font-size: clamp(2rem, 5vw, 3.25rem);
+        line-height: 1.08;
+      }
+
+      .post-meta {
+        margin: 0 0 32px;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+
+      h1,
+      h2,
+      h3 {
+        line-height: 1.2;
+      }
+
+      h2 {
+        margin-top: 44px;
+        padding-top: 8px;
+        border-top: 1px solid var(--rule);
+      }
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        margin: 24px auto;
+        border: 1px solid var(--rule);
+        border-radius: 8px;
+      }
+
+      code {
+        background: var(--accent-soft);
+        border-radius: 4px;
+        padding: 0.12em 0.3em;
+        font-size: 0.92em;
+      }
+
+      pre {
+        overflow-x: auto;
+        background: #111827;
+        color: #f9fafb;
+        border-radius: 8px;
+        padding: 18px;
+      }
+
+      pre code {
+        background: transparent;
+        color: inherit;
+        padding: 0;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 24px 0;
+      }
+
+      th,
+      td {
+        border: 1px solid var(--rule);
+        padding: 10px 12px;
+        text-align: left;
+        vertical-align: top;
+      }
+
+      th {
+        background: var(--accent-soft);
+      }
+
+      .callout {
+        margin: 24px 0;
+        padding: 16px 18px;
+        border-left: 4px solid var(--accent);
+        background: var(--accent-soft);
+      }
+
+      .callout.warning {
+        border-left-color: #d97706;
+        background: #fff7ed;
+      }
+
+      .visual-figure {
+        margin: 28px 0 36px;
+      }
+
+      .visual-figure img {
+        width: 100%;
+        max-width: none;
+        margin: 0 auto 10px;
+      }
+
+      .visual-figure figcaption {
+        color: var(--muted);
+        font-size: 0.92rem;
+        line-height: 1.45;
+      }
+
+      .comments {
+        margin-top: 40px;
+        padding-top: 28px;
+        border-top: 1px solid var(--rule);
+      }
+
+      .comments h2 {
+        margin: 0 0 6px;
+        padding: 0;
+        border: 0;
+      }
+
+      .comments-note {
+        margin: 0 0 18px;
+        color: var(--muted);
+      }
+
+      .site-footer {
+        padding: 0 0 32px;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+    </header>
+
+    <main>
+      <article>
+        <header>
+          <h1 class="post-title">{{ page.title | escape }}</h1>
+          <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</p>
+        </header>
+
+        {{ content }}
+
+        {% include comments.html %}
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      &copy; {{ site.time | date: "%Y" }} {{ site.title | escape }}
+    </footer>
+  </body>
+</html>
