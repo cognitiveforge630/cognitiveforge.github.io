@@ -122,3 +122,9 @@ The project will continue to distinguish **benchmark comparison**, **mesh conver
 - [Current repository README](https://github.com/cognitiveforge630/HermiteStructural/blob/main/README.md)
 
 All dimensional values above use **in, lbf, and psi**. The example and its published comparison are research and verification results, not a claim that the broader codebase or future applications are mathematically certified.
+
+## Next Step: Rigorous A Posteriori Error Certification
+
+The next major objective for **Tutorial 001** is to develop and demonstrate a **rigorous a posteriori error certificate** for the current higher-order Hermite finite-element formulation. This means going beyond agreement with a beam-theory reference to construct and verify a mathematically justified bound on the numerical error for a clearly specified problem and norm.
+
+The certification work will address the admissibility of the approximation, boundary conditions and applied loads, equilibrium or equilibrated stress reconstruction where appropriate, and a computable error bound backed by reproducible tests. **This is the next research milestone, not a certification already achieved.**
