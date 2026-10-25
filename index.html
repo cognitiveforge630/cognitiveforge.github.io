@@ -4,102 +4,40 @@ title: Cognitive Forge
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ site.title | escape }}</title>
-    {% include seo.html %}
-    {% include goatcounter.html %}
-    <style>
-      :root {
-        color-scheme: light;
-        --bg: #fbfaf8;
-        --panel: #ffffff;
-        --text: #1f2933;
-        --muted: #667085;
-        --rule: #d9dee7;
-        --accent: #2563eb;
-        --accent-soft: #e8f0ff;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        background: var(--bg);
-        color: var(--text);
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        line-height: 1.65;
-      }
-
-      main {
-        width: min(100% - 32px, 840px);
-        margin: 0 auto 48px;
-        padding-top: 32px;
-      }
-
-      h1 {
-        margin: 0 0 10px;
-        font-size: clamp(2rem, 5vw, 3.25rem);
-        line-height: 1.08;
-      }
-
-      .intro {
-        color: var(--muted);
-        margin-bottom: 32px;
-      }
-
-      .post-list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: grid;
-        gap: 14px;
-      }
-
-      .post-list a {
-        display: block;
-        background: var(--panel);
-        border: 1px solid var(--rule);
-        border-radius: 8px;
-        padding: 18px 20px;
-        color: var(--text);
-        text-decoration: none;
-      }
-
-      .post-list a:hover {
-        border-color: var(--accent);
-      }
-
-      .post-title {
-        display: block;
-        font-weight: 700;
-      }
-
-      .post-date {
-        display: block;
-        color: var(--muted);
-        font-size: 0.92rem;
-      }
-    </style>
-  </head>
-  <body>
-    <main>
-      <h1>{{ site.title | escape }}</h1>
-      <p class="intro">{{ site.description | escape }}</p>
-
-      <ul class="post-list">
-        {% for post in site.posts %}
-          <li>
-            <a href="{{ post.url | relative_url }}">
-              <span class="post-title">{{ post.title | escape }}</span>
-              <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
-    </main>
-  </body>
-</html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ site.title | escape }}</title>
+{% include seo.html %}
+{% include goatcounter.html %}
+<style>
+:root {color-scheme:light;--bg:#fafbfc;--text:#17212e;--muted:#526171;--accent:#154e86;--line:#d8e0e9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{width:min(100% - 40px,820px);margin:0 auto;padding:65px 0 90px}
+header{border-bottom:1px solid var(--line);padding-bottom:30px;margin-bottom:34px}
+h1{font-size:clamp(2.2rem,5vw,3.7rem);line-height:1.14;letter-spacing:-.04em;margin:0 0 14px}
+h2{font-size:1.3rem;letter-spacing:-.02em;margin:0 0 14px}
+p{margin:0 0 15px} .muted{color:var(--muted)}
+a{color:var(--accent);text-underline-offset:3px}
+.feature{padding:8px 0 28px;border-bottom:1px solid var(--line)}
+.feature a{font-size:1.3rem;font-weight:650}
+small{color:var(--muted)}
+.links{margin-top:28px}
+.links a{display:inline-block;margin:0 24px 10px 0}
+</style>
+</head>
+<body><main>
+<header><h1>Cognitive Forge</h1><p class="muted">HermiteStructural · finite-element verification and research documentation</p></header>
+<section class="feature">
+<h2>Tutorial 001</h2>
+<p><a href="{{ site.posts.first.url | relative_url }}">Higher-Order Hermite Cantilever and Orthotropic Matrix Verification</a></p>
+<p>A reproducible cantilever displacement comparison with a reported <strong>0.483063% difference</strong> from the specified beam reference. Eight-node hexahedral connectivity with higher-order, nonlocal quadratic rotation recovery. Prescribed material properties—no tuning of Young’s modulus to fit the answer.</p>
+<p class="muted"><small>Research benchmark agreement; rigorous a posteriori certification remains the next milestone.</small></p>
+</section>
+<nav class="links" aria-label="Research links">
+<a href="https://github.com/cognitiveforge630/HermiteStructural">Current source code</a>
+<a href="https://github.com/cognitiveforge630/HermiteStructural/blob/main/docs/RUN_COMMANDS_IN_ORDER.md">Run commands in order</a>
+<a href="https://github.com/cognitiveforge630/HermiteStructural/tree/main/orthotropic_companion">Orthotropic matrix comparison</a>
+</nav>
+</main></body></html>
