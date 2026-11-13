@@ -12,10 +12,15 @@ comments: true
 A Lagrange polynomial is fixed by its values at distinct points. A Hermite polynomial is fixed by values and derivatives. This change in interpolation data gives the Hermite basis its additional degrees of freedom.
 
 Let there be m support points s_i on the reference interval. We seek a polynomial of degree at most 2m-1, with 2m coefficients, satisfying
+
+<div class="hs-equation">
 \[
 H_{i,0}(s_j)=\delta_{ij},\quad H'_{i,0}(s_j)=0,\qquad
 H_{i,1}(s_j)=0,\quad H'_{i,1}(s_j)=\delta_{ij}.
+
 \]
+</div>
+
 The index 0 selects the value functional; 1 selects the slope functional. These conditions uniquely determine the 2m one-dimensional Hermite shape functions.
 
 For three equally spaced points (-1,0,1), there are six functions and the polynomial degree is five. For four equally spaced points (-1,-1/3,1/3,1), there are eight functions and the degree is seven.
