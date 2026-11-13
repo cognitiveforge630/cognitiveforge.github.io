@@ -1,0 +1,33 @@
+title: Cognitive Forge
+description: Illustrated, reproducible finite-element engineering tutorials.
+url: "https://cognitiveforge630.github.io"
+baseurl: "/cognitiveforge.github.io"
+markdown: kramdown
+highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+      comments: true
+
+giscus:
+  enabled: false
+  repo: cognitiveforge630/cognitiveforge.github.io
+  repo_id: ""
+  category: General
+  category_id: ""
+
+goatcounter:
+  domain: cognitiveforge.goatcounter.com
+
+exclude:
+  - proofread
+  - README.md
+  - README-updated.md
+  - GISCUS-CONFIG-EXAMPLE.yml
+  - Gemfile
+  - Gemfile.lock
+  - scripts
+  - assets/downloads/tutorial001/appendix-a1/README.md

@@ -1,0 +1,6 @@
+<nav class="hs-nav" aria-label="Hermite Tutorial001 lessons">
+  <a href="{{ '/tutorials/hermite/tutorial001/' | relative_url }}">Hermite series overview</a>
+  <a href="{{ '/tutorials/hermitestructural/tutorial001/' | relative_url }}">Lagrange tutorial →</a>
+  {% if page.previous_lesson and page.previous_lesson != '' %}<a href="{{ page.previous_lesson | relative_url }}">← Previous lesson</a>{% endif %}
+  {% if page.next_lesson and page.next_lesson != '' %}<a href="{{ page.next_lesson | relative_url }}">Next lesson →</a>{% endif %}
+</nav>

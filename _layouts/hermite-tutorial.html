@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<link rel="stylesheet" href="{{ '/assets/css/tutorial001.css' | relative_url }}">
+<script>
+  window.MathJax = {tex:{inlineMath:[['\\(','\\)'],['$','$']],displayMath:[['$$','$$'],['\\[','\\]']]},options:{skipHtmlTags:['script','noscript','style','textarea','pre','code']}};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+<article class="hs-tutorial">
+  <header class="hs-hero">
+    <div class="hs-eyebrow">{{ page.series | default: 'Hermite Tensor Tutorial001' }}</div>
+    <h1>{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="hs-subtitle">{{ page.subtitle }}</p>{% endif %}
+    <p class="hs-scope">HermiteHex27 · HermiteHex64 · tensor-product Hermite basis · derivative DOFs</p>
+  </header>
+  {% include hermite-tutorial-nav.html %}
+  <div class="hs-prose">{{ content }}</div>
+  {% include hermite-tutorial-nav.html %}
+</article>

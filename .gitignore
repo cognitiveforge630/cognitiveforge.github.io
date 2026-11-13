@@ -1,0 +1,8 @@
+proofread/
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
+__pycache__/

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title | escape }} · {{ site.title | escape }}</title>
+  {% include seo.html %}
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  {% include goatcounter.html %}
+</head>
+<body>
+  <header class="site-header"><a href="{{ '/' | relative_url }}">Cognitive Forge</a><nav aria-label="Main navigation"><a href="{{ '/tutorials/' | relative_url }}">Tutorials</a><a href="{{ '/tutorials/hermitestructural/tutorial001/appendix-a1-hex8/' | relative_url }}">Appendix A1</a></nav></header>
+  <main id="main-content">{{ content }}</main>
+  {% if page.comments != false %}<div class="site-discussion">{% include comments.html %}</div>{% endif %}
+  <footer class="site-footer">© {{ site.time | date: '%Y' }} Cognitive Forge · Engineering tutorials</footer>
+</body>
+</html>

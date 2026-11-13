@@ -1,0 +1,17 @@
+<section class="comments" aria-label="Reader discussion">
+  <h2>Discussion and questions</h2>
+  <p>Questions, corrections, and worked examples are welcome. Each page has its own discussion when comments are enabled.</p>
+  {% if site.giscus.enabled and site.giscus.repo_id != '' and site.giscus.category_id != '' %}
+  <script src="https://giscus.app/client.js"
+    data-repo="{{ site.giscus.repo | escape }}"
+    data-repo-id="{{ site.giscus.repo_id | escape }}"
+    data-category="{{ site.giscus.category | escape }}"
+    data-category-id="{{ site.giscus.category_id | escape }}"
+    data-mapping="pathname" data-strict="1" data-reactions-enabled="1"
+    data-emit-metadata="0" data-input-position="top"
+    data-theme="preferred_color_scheme" data-lang="en" crossorigin="anonymous" async></script>
+  <noscript>Enable JavaScript to view and leave comments.</noscript>
+  {% else %}
+  <div class="comment-placeholder"><strong>Comments are coming soon.</strong> This page’s discussion box is ready; posting will be available once GitHub Discussions is connected.</div>
+  {% endif %}
+</section>

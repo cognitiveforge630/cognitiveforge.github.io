@@ -1,0 +1,33 @@
+.hs-tutorial { --hs-ink:#17314b; --hs-edge:#d2dde7; --hs-blue:#126b9e; max-width:1040px; margin:1rem auto 5rem; padding:0 clamp(.75rem,3vw,2rem); color:inherit; }
+.hs-hero { background:linear-gradient(135deg,#e9f4fc,#f6fafc); border:1px solid var(--hs-edge); border-radius:18px; padding:clamp(1.2rem,3vw,2.3rem); margin:1rem 0 1.5rem; color:var(--hs-ink); }
+.hs-eyebrow { letter-spacing:.12em; text-transform:uppercase; color:#346583; font-size:.78rem; font-weight:800; }
+.hs-hero h1 { margin:.5rem 0; line-height:1.16; }
+.hs-subtitle { font-size:1.16rem; margin:.6rem 0 1.2rem; }
+.hs-scope { font-size:.85rem; opacity:.85; }
+.hs-nav { display:flex; gap:.5rem; flex-wrap:wrap; border-top:1px solid var(--hs-edge); border-bottom:1px solid var(--hs-edge); padding:.75rem 0; margin:1.6rem 0; }
+.hs-nav a { display:inline-block; border:1px solid var(--hs-edge); border-radius:8px; padding:.45rem .7rem; text-decoration:none; }
+.hs-prose { line-height:1.75; overflow-wrap:anywhere; }
+.hs-prose h2 { font-size:1.5rem; margin-top:2.3rem; border-bottom:1px solid var(--hs-edge); padding-bottom:.3rem; }
+.hs-prose h3 { font-size:1.16rem; margin-top:1.5rem; }
+.hs-prose code { font-size:.91em; }
+.hs-prose pre { overflow-x:auto; border:1px solid #263f55; border-radius:10px; padding:1.2rem; font-size:.88rem; line-height:1.5; }
+.hs-prose pre code { white-space:pre; }
+.hs-prose table { width:100%; display:block; overflow-x:auto; border-collapse:collapse; margin:1.4rem 0; }
+.hs-prose th,.hs-prose td { border:1px solid var(--hs-edge); padding:.6rem .7rem; text-align:left; }
+.hs-prose th { background:#e9f2f9; color:#1e3c51; }
+.hs-prose blockquote { border-left:4px solid #4385b1; margin:1.4rem 0; padding:.5rem 1.2rem; background:#f3f8fb; color:#234058; }
+.hs-matrix-note { margin:1.4rem 0; padding:1rem 1.2rem; border:2px solid #4385b1; border-radius:8px; background:#f3f8fb; color:#234058; }
+.hs-matrix-note p:first-child { margin-top:0; }
+.hs-matrix-note p:last-child { margin-bottom:0; }
+.hs-calculation-box { margin:1.4rem 0; padding:1rem 1.2rem; border:2px solid #4385b1; border-radius:8px; }
+.hs-calculation-box > h2:first-child { margin-top:0; }
+.hs-prose img { max-width:100%; height:auto; }
+.tutorial-figure { padding:1rem; margin:1.5rem 0; background:#fafcff; border:1px solid var(--hs-edge); border-radius:12px; text-align:center; }
+.tutorial-figure img { display:block; max-width:100%; height:auto; margin:auto; }
+.tutorial-figure figcaption { font-size:.86rem; color:#526778; margin:.65rem 0 0; line-height:1.5; }
+.hs-comments { border-top:2px solid var(--hs-edge); padding-top:1rem; margin-top:3rem; }
+.hs-comment-note { padding:1rem; border:1px dashed #9eafba; border-radius:8px; background:#f5f9fb; }
+.hs-lesson-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:.7rem; margin:1.3rem 0; }
+.hs-lesson-card { border:1px solid var(--hs-edge); border-radius:10px; padding:1rem; background:#f6fbff; }
+.hs-lesson-card a { font-weight:700; }
+@media (prefers-color-scheme:dark) { .hs-tutorial { --hs-edge:#49606f; } .hs-hero { background:linear-gradient(135deg,#1b3447,#243a49); color:#e9f3fa; } .hs-eyebrow { color:#b2d9f6; } .hs-prose th { background:#20384a; color:#ecf5fb; } .tutorial-figure, .hs-lesson-card, .hs-comment-note { background:#203242; color:#e4ebf2; } .tutorial-figure figcaption { color:#bed0dd; } }
