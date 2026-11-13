@@ -11,28 +11,22 @@ comments: true
 ---
 Hermite data include derivatives, so changing coordinates changes the nodal functionals. For an axis-aligned affine element,
 
-<div class="hs-equation">
-\[
+$$
 x=x_0+\frac{h_x}{2}(1+\xi),\quad
 y=y_0+\frac{h_y}{2}(1+\eta),\quad
 z=z_0+\frac{h_z}{2}(1+\zeta).
-
-\]
-</div>
+$$
 
 For derivative mask (a,b,c), with each entry 0 or 1,
 
-<div class="hs-equation">
-\[
+$$
 \frac{\partial^{a+b+c}u}{\partial \xi^a\partial\eta^b\partial\zeta^c}
 =
 \left(\frac{h_x}{2}\right)^a
 \left(\frac{h_y}{2}\right)^b
 \left(\frac{h_z}{2}\right)^c
 \frac{\partial^{a+b+c}u}{\partial x^a\partial y^b\partial z^c}.
-
-\]
-</div>
+$$
 
 Therefore, if global DOFs store physical-coordinate derivatives, the parent-space Hermite shape paired with that DOF carries the product of half-length scale factors. Differentiating the shape back to physical space contributes the corresponding Jacobian factor 2/h_d.
 
