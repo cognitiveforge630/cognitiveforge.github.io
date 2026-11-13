@@ -3,13 +3,18 @@ layout: default
 title: Cognitive Forge — Engineering tutorials
 ---
 <h1>Engineering, step by step.</h1>
-<p class="home-lead">Illustrated, reproducible tutorials for understanding finite-element shape functions, coordinate mappings, and strain–displacement matrices.</p>
+<p class="home-lead">Illustrated, reproducible tutorials for finite-element interpolation, coordinate mappings, and strain–displacement matrices.</p>
+
 <section class="home-card">
-<h2><a href="{{ '/tutorials/hermitestructural/tutorial001/' | relative_url }}">Tutorial001 — Build the shape functions, gradients, and B matrix</a></h2>
-<p>Eight lessons develop the C0 Lagrange Hex8, Hex27, and Hex64 elements, from interpolation points and capital Π products to derivatives, node ordering, tensor products, Jacobian mapping, and numerical verification.</p>
-<p><a href="{{ '/tutorials/hermitestructural/tutorial001/01-linear-points/' | relative_url }}">Start Lesson 01 →</a> · <a href="{{ '/tutorials/' | relative_url }}">Browse tutorials</a></p>
+<h2><a href="{{ '/tutorials/hermite/tutorial001/' | relative_url }}">Hermite Tutorial001 — Higher-node tensor-product Hermite solids</a></h2>
+<p>Build genuine higher-order Hermite Hex27 and Hex64 elements from value-and-derivative basis data. Follow the tensor-product basis through physical derivatives, the strain operator, element integration, and structured connectivity.</p>
+<p><a href="{{ '/tutorials/hermite/tutorial001/01-one-dimensional-hermite/' | relative_url }}">Start Hermite Lesson 01 →</a></p>
 </section>
+
 <section class="home-card">
-<h2><a href="{{ '/tutorials/hermitestructural/tutorial001/appendix-a1-hex8/' | relative_url }}">Appendix A1 — The first-degree eight-node hexahedron</a></h2>
-<p>The original reference, reproduced PyVista diagram, trilinear shape functions, node-numbering comparison, and downloadable HexahedronMomentDocs source snapshot.</p>
+<h2><a href="{{ '/tutorials/hermitestructural/tutorial001/' | relative_url }}">Lagrange Tutorial001 — Hex8, Hex27, and Hex64 shape functions</a></h2>
+<p>Build the conventional C0, displacement-only Lagrange elements from interpolation points and capital Π products through tensor products, Jacobian mapping, the B matrix, and numerical verification.</p>
+<p><a href="{{ '/tutorials/hermitestructural/tutorial001/01-linear-points/' | relative_url }}">Start Lagrange Lesson 01 →</a> · <a href="{{ '/tutorials/hermitestructural/tutorial001/appendix-a1-hex8/' | relative_url }}">Appendix A1: Hex8</a></p>
 </section>
+
+<p><a href="{{ '/tutorials/' | relative_url }}">Browse all tutorials</a></p>
