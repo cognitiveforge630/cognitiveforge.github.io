@@ -10,6 +10,8 @@
 .hs-prose h2 { font-size:1.5rem; margin-top:2.3rem; border-bottom:1px solid var(--hs-edge); padding-bottom:.3rem; }
 .hs-prose h3 { font-size:1.16rem; margin-top:1.5rem; }
 .hs-prose code { font-size:.91em; }
+.hs-equation { margin:1.25rem 0; max-width:100%; overflow-x:auto; overflow-y:hidden; }
+.hs-equation mjx-container[display="true"] { min-width:max-content; }
 .hs-prose pre { overflow-x:auto; border:1px solid #263f55; border-radius:10px; padding:1.2rem; font-size:.88rem; line-height:1.5; }
 .hs-prose pre code { white-space:pre; }
 .hs-prose table { width:100%; display:block; overflow-x:auto; border-collapse:collapse; margin:1.4rem 0; }
