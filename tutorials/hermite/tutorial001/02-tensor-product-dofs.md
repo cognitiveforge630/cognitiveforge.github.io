@@ -10,14 +10,24 @@ next_lesson: /tutorials/hermite/tutorial001/03-physical-derivatives/
 comments: true
 ---
 Let H_i,a(s) be the one-dimensional basis at support point i, where a=0 means value and a=1 means first derivative. The three-dimensional scalar basis is
+
+<div class="hs-equation">
 \[
 N_{ijk}^{abc}(\xi,\eta,\zeta)=H_{i,a}(\xi)H_{j,b}(\eta)H_{k,c}(\zeta),
 \qquad a,b,c\in\{0,1\}.
+
 \]
+</div>
+
 It pairs with the nodal functional
+
+<div class="hs-equation">
 \[
 \frac{\partial^{a+b+c}u}{\partial x^a\,\partial y^b\,\partial z^c}
+
 \]
+</div>
+
 at support point (i,j,k). One scalar field therefore has eight data at each point:
 u, u_x, u_y, u_z, u_xy, u_xz, u_yz, u_xyz.
 
