@@ -11,30 +11,21 @@ comments: true
 ---
 Once B_H is available, linear elastic stiffness has the standard expression
 
-<div class="hs-equation">
-\[
+$$
 \mathbf K_e=\int_{\Omega_e}\mathbf B_H^T\mathbf D\mathbf B_H\,dV.
-
-\]
-</div>
+$$
 
 A body force b uses the displacement interpolation,
 
-<div class="hs-equation">
-\[
+$$
 \mathbf f_e^{(b)}=\int_{\Omega_e}\mathbf N_H^T\mathbf b\,dV,
-
-\]
-</div>
+$$
 
 and a face traction t uses its trace,
 
-<div class="hs-equation">
-\[
+$$
 \mathbf f_e^{(t)}=\int_{\Gamma_e}\mathbf N_H^T\mathbf t\,dA.
-
-\]
-</div>
+$$
 
 Because N_H includes derivative DOFs, consistent loads can contribute to those generalized entries too. Loads should be integrated; a midpoint stress or force replacement is not an integration rule.
 
