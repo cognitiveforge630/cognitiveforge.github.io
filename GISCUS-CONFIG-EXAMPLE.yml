@@ -1,0 +1,6 @@
+giscus:
+  enabled: false # Set true after installing Giscus and supplying the IDs.
+  repo: cognitiveforge630/cognitiveforge.github.io
+  repo_id: ""
+  category: General
+  category_id: ""

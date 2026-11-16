@@ -1,0 +1,34 @@
+<svg viewBox="0 0 760 410" role="img" aria-labelledby="hex27-title hex27-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="hex27-title">HermiteHex27 support grid and an evaluation point</title>
+  <desc id="hex27-desc">A three by three by three lattice of 27 points forms a reference cube. The center support point at zero, zero, zero is highlighted, and a sample evaluation point at one half, minus one half, one quarter is marked inside it.</desc>
+  <rect x="10" y="10" width="740" height="390" rx="16" fill="#f1f7fb" stroke="#cbd9e4"/>
+  <text x="35" y="45" font-size="21" font-weight="700" fill="#17314b">HermiteHex27: 3 × 3 × 3 support points</text>
+  <g stroke="#91a7b8" stroke-width="1.5" fill="none">
+    <!-- Lines parallel to ξ, η, ζ through the 3×3×3 lattice. -->
+    <path d="M160 180H360 M160 280H360 M160 380H360 M210 142.5H410 M210 242.5H410 M210 342.5H410 M260 105H460 M260 205H460 M260 305H460"/>
+    <path d="M160 180V380 M260 105V305 M360 180V380 M210 142.5V342.5 M310 105V305 M410 142.5V342.5 M260 105V305 M360 180V380 M460 105V305"/>
+    <path d="M160 180L260 105 M160 280L260 205 M160 380L260 305 M260 180L360 105 M260 280L360 205 M260 380L360 305 M360 180L460 105 M360 280L460 205 M360 380L460 305"/>
+  </g>
+  <g fill="#1677a8" stroke="white" stroke-width="2">
+    <circle cx="160" cy="180" r="5"/><circle cx="260" cy="180" r="5"/><circle cx="360" cy="180" r="5"/><circle cx="160" cy="280" r="5"/><circle cx="260" cy="280" r="5"/><circle cx="360" cy="280" r="5"/><circle cx="160" cy="380" r="5"/><circle cx="260" cy="380" r="5"/><circle cx="360" cy="380" r="5"/>
+    <circle cx="210" cy="142.5" r="5"/><circle cx="310" cy="142.5" r="5"/><circle cx="410" cy="142.5" r="5"/><circle cx="210" cy="242.5" r="5"/><circle cx="310" cy="242.5" r="5"/><circle cx="410" cy="242.5" r="5"/><circle cx="210" cy="342.5" r="5"/><circle cx="310" cy="342.5" r="5"/><circle cx="410" cy="342.5" r="5"/>
+    <circle cx="260" cy="105" r="5"/><circle cx="360" cy="105" r="5"/><circle cx="460" cy="105" r="5"/><circle cx="260" cy="205" r="5"/><circle cx="360" cy="205" r="5"/><circle cx="460" cy="205" r="5"/><circle cx="260" cy="305" r="5"/><circle cx="360" cy="305" r="5"/><circle cx="460" cy="305" r="5"/>
+  </g>
+  <circle cx="310" cy="242.5" r="9" fill="#e26d42" stroke="white" stroke-width="3"/>
+  <text x="319" y="239" font-size="14" font-weight="700" fill="#9b4528">center node (0,0,0)</text>
+  <path d="M372.5 182.8l8 8-8 8-8-8z" fill="#17835d" stroke="white" stroke-width="2"/>
+  <text x="385" y="195" font-size="13" fill="#176b4d">sample point</text>
+  <text x="350" y="392" font-size="15" fill="#35566c">ξ: −1, 0, 1</text>
+  <text x="70" y="283" font-size="15" fill="#35566c">η: −1, 0, 1</text>
+  <text x="468" y="95" font-size="15" fill="#35566c">ζ: −1, 0, 1</text>
+  <g font-size="15" fill="#17314b">
+    <text x="515" y="118" font-weight="700">Each support point carries</text>
+    <text x="515" y="150">8 scalar data types:</text>
+    <text x="515" y="181">u, u<tspan baseline-shift="sub" font-size="70%">x</tspan>, u<tspan baseline-shift="sub" font-size="70%">y</tspan>, u<tspan baseline-shift="sub" font-size="70%">z</tspan></text>
+    <text x="515" y="207">u<tspan baseline-shift="sub" font-size="70%">xy</tspan>, u<tspan baseline-shift="sub" font-size="70%">xz</tspan>, u<tspan baseline-shift="sub" font-size="70%">yz</tspan>, u<tspan baseline-shift="sub" font-size="70%">xyz</tspan></text>
+    <text x="515" y="257" font-weight="700">27 points × 8 = 216</text>
+    <text x="515" y="280">scalar DOFs per field</text>
+    <text x="515" y="324" font-weight="700">3 displacement fields</text>
+    <text x="515" y="347">× 216 = 648 local DOFs</text>
+  </g>
+</svg>

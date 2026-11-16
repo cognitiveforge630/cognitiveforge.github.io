@@ -1,0 +1,50 @@
+<svg viewBox="0 0 980 440" role="img" aria-labelledby="three-node-basis-title three-node-basis-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="three-node-basis-title">The two Hermite basis functions associated with the middle of three support points</title>
+  <desc id="three-node-basis-desc">Across support points minus one, zero, and one, the value basis H two zero has heights zero, one, zero and zero slopes at all points. The slope basis H two one has zero heights at all three points and slopes zero, one, zero.</desc>
+  <rect x="10" y="10" width="470" height="420" rx="16" fill="#f1f7fb" stroke="#cbd9e4"/>
+  <rect x="500" y="10" width="470" height="420" rx="16" fill="#f1f7fb" stroke="#cbd9e4"/>
+  <text x="35" y="43" font-size="20" font-weight="700" fill="#17314b">i = 2: value basis H₂,₀(s)</text>
+  <text x="525" y="43" font-size="20" font-weight="700" fill="#17314b">i = 2: slope basis H₂,₁(s)</text>
+  <text x="35" y="67" font-size="14" fill="#526778">The middle node's value is 1; the other node values are 0.</text>
+  <text x="525" y="67" font-size="14" fill="#526778">Only the middle node has slope 1; all three values are 0.</text>
+  <line x1="105" y1="300" x2="415" y2="300" stroke="#526778" stroke-width="2"/>
+  <line x1="105" y1="120" x2="105" y2="300" stroke="#526778" stroke-width="2"/>
+  <line x1="555" y1="220" x2="865" y2="220" stroke="#526778" stroke-width="2"/>
+  <line x1="555" y1="120" x2="555" y2="320" stroke="#526778" stroke-width="2"/>
+  <g stroke="#a9bbc8" stroke-width="1.5" stroke-dasharray="4 5">
+    <line x1="105" y1="120" x2="105" y2="300"/><line x1="260" y1="120" x2="260" y2="300"/><line x1="415" y1="120" x2="415" y2="300"/>
+    <line x1="555" y1="120" x2="555" y2="320"/><line x1="710" y1="120" x2="710" y2="320"/><line x1="865" y1="120" x2="865" y2="320"/>
+  </g>
+  <path d="M105 300 C155 300 210 150 260 150 C310 150 365 300 415 300" fill="none" stroke="#1677a8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M555 220 C561.46 220, 567.92 225.73, 574.38 233.46 C580.83 241.19, 587.29 250.94, 593.75 260.20 C600.21 269.45, 606.67 278.21, 613.13 284.98 C619.58 291.76, 626.04 296.56, 632.50 298.75 C638.96 300.94, 645.42 300.52, 651.88 297.55 C658.33 294.57, 664.79 289.04, 671.25 281.52 C677.71 274.00, 684.17 264.50, 690.63 253.91 C697.08 243.33, 703.54 231.67, 710 220 C716.46 208.33, 722.92 196.67, 729.38 186.09 C735.83 175.50, 742.29 166.00, 748.75 158.48 C755.21 150.96, 761.67 145.43, 768.13 142.45 C774.58 139.48, 781.04 139.06, 787.50 141.25 C793.96 143.44, 800.42 148.24, 806.88 155.02 C813.33 161.79, 819.79 170.55, 826.25 179.80 C832.71 189.06, 839.17 198.81, 845.63 206.54 C852.08 214.27, 858.54 220, 865 220" fill="none" stroke="#7454a5" stroke-width="5" stroke-linecap="round"/>
+  <g fill="#e26d42" stroke="white" stroke-width="3">
+    <circle cx="105" cy="300" r="7"/><circle cx="260" cy="150" r="7"/><circle cx="415" cy="300" r="7"/>
+    <circle cx="555" cy="220" r="7"/><circle cx="710" cy="220" r="7"/><circle cx="865" cy="220" r="7"/>
+  </g>
+  <g stroke="#17835d" stroke-width="3">
+    <line x1="87" y1="300" x2="123" y2="300"/><line x1="242" y1="150" x2="278" y2="150"/><line x1="397" y1="300" x2="433" y2="300"/>
+    <line x1="537" y1="220" x2="573" y2="220"/><line x1="694" y1="249" x2="726" y2="191"/><line x1="847" y1="220" x2="883" y2="220"/>
+  </g>
+  <g stroke="#526778" stroke-width="1.5">
+    <line x1="100" y1="300" x2="110" y2="300"/><line x1="100" y1="210" x2="110" y2="210"/><line x1="100" y1="120" x2="110" y2="120"/>
+    <line x1="550" y1="136" x2="560" y2="136"/><line x1="550" y1="220" x2="560" y2="220"/><line x1="550" y1="304" x2="560" y2="304"/>
+    <line x1="105" y1="295" x2="105" y2="305"/><line x1="260" y1="295" x2="260" y2="305"/><line x1="415" y1="295" x2="415" y2="305"/>
+    <line x1="555" y1="215" x2="555" y2="225"/><line x1="710" y1="215" x2="710" y2="225"/><line x1="865" y1="215" x2="865" y2="225"/>
+  </g>
+  <g font-size="12" fill="#35566c" text-anchor="end">
+    <text x="94" y="124">1</text><text x="94" y="214">0.5</text><text x="94" y="304">0</text>
+    <text x="544" y="140">0.3</text><text x="544" y="224">0</text><text x="544" y="308">−0.3</text>
+  </g>
+  <g font-size="12" fill="#35566c" text-anchor="middle">
+    <text x="105" y="324">−1 (s₁)</text><text x="260" y="324">0 (s₂)</text><text x="415" y="324">1 (s₃)</text>
+    <text x="555" y="244">−1 (s₁)</text><text x="710" y="244">0 (s₂)</text><text x="865" y="244">1 (s₃)</text>
+  </g>
+  <text x="408" y="344" font-size="13" fill="#35566c">s</text><text x="858" y="264" font-size="13" fill="#35566c">s</text>
+  <text transform="translate(67 220) rotate(-90)" font-size="12" fill="#35566c">H₂,₀(s)</text>
+  <text transform="translate(517 220) rotate(-90)" font-size="12" fill="#35566c">H₂,₁(s)</text>
+  <text x="35" y="370" font-size="14" fill="#35566c">At s₁, s₂, s₃: values = 0, 1, 0</text>
+  <text x="35" y="393" font-size="14" fill="#35566c">slopes = 0, 0, 0</text>
+  <text x="525" y="370" font-size="14" fill="#35566c">At s₁, s₂, s₃: values = 0, 0, 0</text>
+  <text x="525" y="393" font-size="14" fill="#35566c">slopes = 0, 1, 0</text>
+  <text x="35" y="418" font-size="13" fill="#526778">Each j is one of the three marked support points; the red dots show the required values.</text>
+</svg>

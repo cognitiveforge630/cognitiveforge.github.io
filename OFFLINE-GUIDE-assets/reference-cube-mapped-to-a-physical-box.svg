@@ -1,0 +1,31 @@
+<svg viewBox="0 0 900 390" role="img" aria-labelledby="coordinate-map-title coordinate-map-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="coordinate-map-title">Reference cube mapped to a physical box</title>
+  <desc id="coordinate-map-desc">A reference cube with coordinates from minus one to one maps to a physical box with side lengths four, six, and eight. A highlighted reference point at 0.5, zero, minus 0.5 maps to physical point 3, 3, 2.</desc>
+  <rect x="10" y="10" width="880" height="365" rx="16" fill="#f1f7fb" stroke="#cbd9e4"/>
+  <text x="45" y="48" font-size="21" font-weight="700" fill="#17314b">Reference element</text>
+  <text x="485" y="48" font-size="21" font-weight="700" fill="#17314b">Physical element</text>
+  <g stroke="#1677a8" stroke-width="2.5" fill="none">
+    <path d="M70 120H245V285H70Z M115 85H290V250H115Z M70 120L115 85 M245 120L290 85 M245 285L290 250 M70 285L115 250"/>
+  </g>
+  <g font-size="14" fill="#35566c">
+    <text x="68" y="315">each parent axis: −1 to 1</text>
+    <text x="80" y="111">(−1,−1,−1)</text>
+    <text x="250" y="304">(1,1,1)</text>
+    <text x="250" y="278">ξ</text><text x="96" y="80">ζ</text><text x="53" y="205">η</text>
+  </g>
+  <path d="M335 185H435" stroke="#7454a5" stroke-width="4"/>
+  <path d="M435 185l-13-8v16z" fill="#7454a5"/>
+  <text x="347" y="164" font-size="14" fill="#7454a5">map coordinates</text>
+  <g stroke="#1677a8" stroke-width="2.5" fill="none">
+    <path d="M510 120H685V285H510Z M555 85H730V250H555Z M510 120L555 85 M685 120L730 85 M685 285L730 250 M510 285L555 250"/>
+  </g>
+  <g font-size="14" fill="#35566c">
+    <text x="510" y="315">x: 0 to 4</text><text x="607" y="315">y: 0 to 6</text><text x="706" y="270">z: 0 to 8</text>
+    <text x="517" y="111">(0,0,0)</text><text x="683" y="302">(4,6,8)</text>
+  </g>
+  <circle cx="213" cy="194" r="8" fill="#17835d" stroke="white" stroke-width="3"/>
+  <text x="128" y="231" font-size="13" fill="#176b4d">(0.5, 0, −0.5)</text>
+  <circle cx="652" cy="194" r="8" fill="#17835d" stroke="white" stroke-width="3"/>
+  <text x="595" y="231" font-size="13" fill="#176b4d">(3, 3, 2)</text>
+  <text x="45" y="356" font-size="14" fill="#526778">A full parent-coordinate step spans half the physical side length: hₓ/2=2, hᵧ/2=3, h_z/2=4.</text>
+</svg>

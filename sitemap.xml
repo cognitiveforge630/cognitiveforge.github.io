@@ -1,0 +1,10 @@
+---
+layout: null
+comments: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for item in site.pages %}{% assign prefix = item.url | slice: 0, 11 %}{% if item.url == '/' or prefix == '/tutorials/' %}
+<url><loc>{{ item.url | absolute_url }}</loc></url>
+{% endif %}{% endfor %}
+</urlset>
